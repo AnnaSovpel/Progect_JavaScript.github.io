@@ -1,0 +1,341 @@
+@font-face {
+    font-family: Roboto; 
+    src: url(./ttf/Roboto-Regular.ttf);
+}
+body {
+    font-family: Roboto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    background-image: url(./pictures/paper_crumpled_light_shadow-701873.jpg!d)
+}
+.main {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.main_container {
+    display: flex; 
+    width: 70%;
+    box-shadow:6px 5px 4px 3px rgba(0,0,0,0.55);
+    -webkit-box-shadow:6px 5px 4px 3px rgba(0,0,0,0.55);
+    -moz-box-shadow:6px 5px 4px 3px rgba(0,0,0,0.55); 
+    border-radius: 10px;
+}
+.main_container_Form {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    /* border: 2px solid purple; */
+}
+.main_Container_Div_Img {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+.main_Container_Img{
+    border-radius: 10px;
+
+}
+.main_container_Form__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.734);
+}
+.main_container_Form__flex__text {
+    padding-bottom: 40px;
+}
+.main_container_Form__Sing_Up {
+    margin: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+.main_container_Form__Sing_Up:hover {
+    text-decoration: underline rgba(29, 29, 29, 0.741);
+}
+.main_container_Form_Input {
+    height: 30px;
+    width: 220px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 2px solid rgba(148, 147, 147, 0.234);
+}
+input {
+    outline: none;
+}
+.main_container_form_MissingEmailWrapper {
+    height: 10px;
+    width: 220px;
+    font-size: 12px;
+    text-align: center;
+    color: red;
+}
+.main_container_Form_button {
+    height: 30px;
+    width: 120px;
+    font-size: 15px;
+    border-radius: 6px;
+    background-color: #b4c28d;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 40px;
+}
+.main_container_Form_button:hover{
+    background-color: #a9bd72;
+}
+.main_container_Form_forgot_UN {
+    font-size: 12px;
+    padding-top: 12px;
+    cursor: pointer;
+}
+.main_container_Form_forgot_UN:hover {
+    text-decoration: underline rgba(29, 29, 29, 0.741);
+}
+.main_container_Form_Forgot__EmailFormWrapper {
+    width: 240px;
+    height: 120px;
+}
+.main_container_Form_Forgot__EmailForm{
+    margin-top: 10px;
+    background-color: #b4c28d;
+    width: 240px;
+    height: 120px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_container_Form_Forgot__EmailForm__display{
+    display: none;
+}
+.main_container_Form_ForgotUserText{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+}
+.main_container_Form_ForgotUser__AnswerText{
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+                    /* REGESTRATION */
+.checkbox__label:before{
+    content:' ';
+    display:block;
+    height: 17px;
+    width: 17px;
+    position:absolute;
+    top:0;
+    left:0;
+    background: white;
+    border-radius: 10px;
+}
+.checkbox__label:after{
+    content:' ';
+    display:block;
+    height: 15px;
+    width:15px;
+    border: 2px solid rgba(255, 0, 0, 0.501);
+    border-radius: 10px;
+    transition:200ms;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:100ms ease-in-out;
+}
+.checkbox__input:checked ~ .checkbox__label:after{
+    height: 15px;
+    border-color:#94a565;
+}
+.checkbox-transform{
+    position:relative;
+    font-size: 18px;
+    cursor:pointer;
+}
+.checkbox__label{
+    margin-left: 10px;
+    line-height: 15px;
+}
+
+.main_container_regestration_return_back{
+    cursor: pointer;
+    color: #b4c28d;
+    font-size: 50px;
+}
+.main_container_regestration_return_back:hover {
+    color: #94a565;
+}
+.regestration_block_show {
+    animation: showBlock 2s linear forwards;
+}
+@keyframes showBlock {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.input_full {
+    border: 2px solid rgba(255, 0, 0, 0.713);
+}
+.main_container_regestration_PassworMessageWrapper{
+    height: 25px;
+    width: 220px;
+}
+.main_container_regestration_PassworMessage {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.main_container_Email_hint{
+    height: 2px;
+    font-size: 11px;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 2px;
+}
+                    /* CONTENT */
+.content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+.content_text {
+    text-align: justify;
+    padding: 10px;
+}
+.content_conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+.content_conteiner_food {
+    background-image: url(./pictures/food_500.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.content_conteiner_food:hover{
+    opacity: 0.8;
+}
+.content_conteiner_yoga {
+    background-image: url(./pictures/yoga_500.jpg);
+}
+.content_conteiner_yoga_video {
+    margin: 15px;
+}
+.content_conteiner_food_text {
+    border: 2px solid rgba(255, 255, 255, 0.891);
+    background-color: #b4c28dbf;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.content_conteiner_food_selection {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.content_conteiner_food_selection_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 50%;
+    font-size: 18px;
+    padding: 10px;
+}
+.content_conteiner_DetoxMenu {
+    margin: 15px auto;
+}
+.content_conteiner_food_selection__DetoxImg{
+    border-radius: 20px;
+    opacity: 0.8;
+}
+.content_returnBack{
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .main_container{
+        width: 90%;
+    }
+}
+@media (max-width: 860px) {
+    .main_container{
+        flex-direction: column;
+    }
+    .main_container_Form {
+        width:100%;
+        align-items: center;
+    }
+    .main_Container_Div_Img {
+        width:100%;
+        align-items: center;
+    }
+    .main_container_regestration_PassworMessageWrapper{
+        height: 20px;
+    }
+    .content {
+        width: 100%;
+    }
+    .content_conteiner{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 570px) {
+    .main_Container_Img{
+        display: none;
+    }
+    .main_container{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    body {
+        background-color: #b4c28da3;
+    }
+    .main_container_Form__flex__text{
+        padding: 20px;
+    }
+
+}
+@media (max-width: 420px){
+    .content_conteiner_food {
+        height: 200px;
+        width: 100px;
+    }
+}
+
