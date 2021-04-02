@@ -378,6 +378,7 @@ function LogIn(){
 function FoodSelection (){
     mainContainer.replaceChild(contentContainerFoodSelection, contentContainer);
     contentContainerFoodSelection.classList.add('regestration_block_show');
+    contentText.textContent='';
     contentTextFood.textContent = 'Detox is a special food system designed to eliminate toxic and harmful compounds from the body.Detox food includes vegetables, fruits and water. We recommend starting the path to a healthy diet with detox.'
     contentTextYoga.textContent = 'A healthy diet includes fruits, vegetables, legumes, nuts, fish, and(or) meat'
 }
