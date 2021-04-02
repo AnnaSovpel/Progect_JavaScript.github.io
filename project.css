@@ -31,18 +31,15 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    /* border: 2px solid purple; */
 }
 .main_Container_Div_Img {
     width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid black; */
 }
 .main_Container_Img{
     border-radius: 10px;
-
 }
 .main_container_Form__flex {
     display: flex;
@@ -313,7 +310,15 @@ input {
     .content_conteiner{
         width: 100%;
     }
-
+    .main_container_regestration_PassworMessageWrapper{
+        padding-bottom: 15px;
+    }
+    .checkbox__label{
+        width: 200px;
+    }
+    .content_conteiner_food_selection {
+        width: 100%;
+    }
 }
 
 @media (max-width: 570px) {
@@ -336,6 +341,9 @@ input {
     .content_conteiner_food {
         height: 200px;
         width: 100px;
+    }
+    .content_conteiner_food_selection__DetoxImg{
+        width: 250px;
     }
 }
 
